@@ -56,7 +56,7 @@ int main()
 	const int arraySize = 20;
 	int array[arraySize] = { 67,13,3,89,43,2,19,71,5,61,97,7,37,31,17,11,83,53,23,29 };
 	int i = 0;
-	int targetValue = 0;
+	
 
 	BubbleSort(array, arraySize);
 
@@ -65,6 +65,19 @@ int main()
 		assert(array[i - 1] < array[i]);
 	}
 	
+	int targetValue = 11;
 	int valuePosition = BinarySearch(targetValue, array, arraySize);
-	cout << valuePosition;
+	assert(valuePosition == 4);
+
+	targetValue = 23;
+	valuePosition = BinarySearch(targetValue, array, arraySize);
+	assert(valuePosition == 8);
+
+	targetValue = 97;
+	valuePosition = BinarySearch(targetValue, array, arraySize);
+	assert(valuePosition == 19);
+
+	targetValue = 88;
+	valuePosition = BinarySearch(targetValue, array, arraySize);
+	assert(valuePosition == -1);
 }
