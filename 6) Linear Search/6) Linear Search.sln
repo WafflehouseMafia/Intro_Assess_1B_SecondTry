@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36908.2 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "6) Linear Search", "6) Linear Search\6) Linear Search.vcxproj", "{F7B8269A-FEBE-4ED7-AD4A-1436C97B506B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7 & 8) Bubble Sort & Binary Search", "..\7) Bubble Sort\7) Bubble Sort.vcxproj", "{2EC3F920-1C9F-4B29-9201-B3AE9E50C6BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{F7B8269A-FEBE-4ED7-AD4A-1436C97B506B}.Release|x64.Build.0 = Release|x64
 		{F7B8269A-FEBE-4ED7-AD4A-1436C97B506B}.Release|x86.ActiveCfg = Release|Win32
 		{F7B8269A-FEBE-4ED7-AD4A-1436C97B506B}.Release|x86.Build.0 = Release|Win32
+		{2EC3F920-1C9F-4B29-9201-B3AE9E50C6BD}.Debug|x64.ActiveCfg = Debug|x64
+		{2EC3F920-1C9F-4B29-9201-B3AE9E50C6BD}.Debug|x64.Build.0 = Debug|x64
+		{2EC3F920-1C9F-4B29-9201-B3AE9E50C6BD}.Debug|x86.ActiveCfg = Debug|Win32
+		{2EC3F920-1C9F-4B29-9201-B3AE9E50C6BD}.Debug|x86.Build.0 = Debug|Win32
+		{2EC3F920-1C9F-4B29-9201-B3AE9E50C6BD}.Release|x64.ActiveCfg = Release|x64
+		{2EC3F920-1C9F-4B29-9201-B3AE9E50C6BD}.Release|x64.Build.0 = Release|x64
+		{2EC3F920-1C9F-4B29-9201-B3AE9E50C6BD}.Release|x86.ActiveCfg = Release|Win32
+		{2EC3F920-1C9F-4B29-9201-B3AE9E50C6BD}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

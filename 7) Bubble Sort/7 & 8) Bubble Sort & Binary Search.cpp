@@ -15,16 +15,31 @@ void BubbleSort(int array[], int arraySize) //Task said we didn't need to return
 	do
 	{
 		OnSwitch = false; //Each loop will set the OnSwitch to off, which would turn it off if it wasn't for the one in the for loop below
-		for (i = 1; i < arraySize; ++i)
+		for (i = 1; i < arraySize; ++i) //Starting on i = 1, since we're checking numbers in pairs and want to make sure that we don't overshoot or undershoot the array
 		{
-			if (array[-1] > array[i])
+			if (array[i-1] > array[i])
 			{
-				int swap = array[-1];
-				array[-1] = array[i];
+				int swap = array[i-1];
+				array[i-1] = array[i];
 				array[i] = swap;
 				OnSwitch = true; //This will continue to set OnSwitch to true so long as this if statement is active. So each time it completes a for loop, the do while will check again.
 				                 //Once everything is correctly sorted into place, the if statement shouldn't trigger, OnSwitch will remain false, and the do while loop will end.
 			}
 		}
-	} while (OnSwitch = true);
+	} while (OnSwitch == true);
+}
+
+int main()
+{
+	const int arraySize = 20;
+	int array[arraySize] = { 67,13,3,89,43,2,19,71,5,61,97,7,37,31,17,11,83,53,23,29 };
+	int i = 0;
+
+	BubbleSort(array, arraySize);
+
+	for (i = 1; i < arraySize; ++i)
+	{
+		assert(array[i - 1] < array[i]);
+	}
+
 }
