@@ -80,4 +80,23 @@ int main()
 	targetValue = 88;
 	valuePosition = BinarySearch(targetValue, array, arraySize);
 	assert(valuePosition == -1);
+
+	cout << "Pick a number, and we'll see if it's in the provided array!\n\n";
+	do
+	{
+		
+		std::cin >> targetValue;
+		valuePosition = BinarySearch(targetValue, array, arraySize);
+		if (valuePosition != -1)
+		{
+			cout << "\nYour value was found at position " << valuePosition << ".\n";
+			cout << "\n\nLet's see if you can get another one!\n\n";
+		}
+		else
+		{
+			cout << "\nYour value was not found in the array. Womp womp.\n";
+		}
+
+	} while (valuePosition != -1);
+		
 }
