@@ -11,6 +11,7 @@ void BubbleSort(int array[], int arraySize) //Task said we didn't need to return
 {
 	bool OnSwitch = true; //As it says on the tin. Setting OnSwitch to true here just means it will play at least once
 	int i = 0;
+	
 
 	do
 	{
@@ -33,10 +34,11 @@ int BinarySearch(int targetValue, int array[], int arraySize)
 {
 	int low = 0;
 	int high = arraySize - 1; //Gotta add the -1, or our high point in an array of 0-19 will be position 20 and break everything
-	int middle = low + (high - low) / 2;
+	
 
 	do
 	{
+		int middle = low + (high - low) / 2; //Gotta put this in the do loop or middle will be calculated only once and this will continue to loop forever
 		if (array[middle] == targetValue)
 			return middle;
 		else if (array[middle] > targetValue)
@@ -54,6 +56,7 @@ int main()
 	const int arraySize = 20;
 	int array[arraySize] = { 67,13,3,89,43,2,19,71,5,61,97,7,37,31,17,11,83,53,23,29 };
 	int i = 0;
+	int targetValue = 0;
 
 	BubbleSort(array, arraySize);
 
@@ -62,4 +65,6 @@ int main()
 		assert(array[i - 1] < array[i]);
 	}
 	
+	int valuePosition = BinarySearch(targetValue, array, arraySize);
+	cout << valuePosition;
 }
