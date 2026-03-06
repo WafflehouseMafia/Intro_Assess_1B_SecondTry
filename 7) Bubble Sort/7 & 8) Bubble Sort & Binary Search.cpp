@@ -29,6 +29,26 @@ void BubbleSort(int array[], int arraySize) //Task said we didn't need to return
 	} while (OnSwitch == true);
 }
 
+int BinarySearch(int targetValue, int array[], int arraySize)
+{
+	int low = 0;
+	int high = arraySize - 1; //Gotta add the -1, or our high point in an array of 0-19 will be position 20 and break everything
+	int middle = low + (high - low) / 2;
+
+	do
+	{
+		if (array[middle] == targetValue)
+			return middle;
+		else if (array[middle] > targetValue)
+			high = middle - 1;
+		else if (array[middle] < targetValue)
+			low = middle + 1;
+	} while (low <= high);
+
+	return -1;
+}
+
+
 int main()
 {
 	const int arraySize = 20;
@@ -41,5 +61,5 @@ int main()
 	{
 		assert(array[i - 1] < array[i]);
 	}
-
+	
 }
