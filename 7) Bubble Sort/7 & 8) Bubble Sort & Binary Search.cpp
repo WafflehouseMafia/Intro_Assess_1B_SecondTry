@@ -65,20 +65,17 @@ int main()
 		assert(array[i - 1] < array[i]);
 	}
 	
-	int targetValue = 11;
-	int valuePosition = BinarySearch(targetValue, array, arraySize);
+	int targetValue;
+	int valuePosition = BinarySearch(11, array, arraySize);
 	assert(valuePosition == 4);
 
-	targetValue = 23;
-	valuePosition = BinarySearch(targetValue, array, arraySize);
+	valuePosition = BinarySearch(23, array, arraySize);
 	assert(valuePosition == 8);
 
-	targetValue = 97;
-	valuePosition = BinarySearch(targetValue, array, arraySize);
+	valuePosition = BinarySearch(97, array, arraySize);
 	assert(valuePosition == 19);
 
-	targetValue = 88;
-	valuePosition = BinarySearch(targetValue, array, arraySize);
+	valuePosition = BinarySearch(88, array, arraySize);
 	assert(valuePosition == -1);
 
 	cout << "Pick a number, and we'll see if it's in the provided array!\n\n";

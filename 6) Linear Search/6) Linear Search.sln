@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "6) Linear Search", "6) Line
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "7 & 8) Bubble Sort & Binary Search", "..\7) Bubble Sort\7) Bubble Sort.vcxproj", "{2EC3F920-1C9F-4B29-9201-B3AE9E50C6BD}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "9) Pointers", "..\9) Pointers\9) Pointers.vcxproj", "{262D2228-9592-4158-8C37-EEB583ED0AA0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{2EC3F920-1C9F-4B29-9201-B3AE9E50C6BD}.Release|x64.Build.0 = Release|x64
 		{2EC3F920-1C9F-4B29-9201-B3AE9E50C6BD}.Release|x86.ActiveCfg = Release|Win32
 		{2EC3F920-1C9F-4B29-9201-B3AE9E50C6BD}.Release|x86.Build.0 = Release|Win32
+		{262D2228-9592-4158-8C37-EEB583ED0AA0}.Debug|x64.ActiveCfg = Debug|x64
+		{262D2228-9592-4158-8C37-EEB583ED0AA0}.Debug|x64.Build.0 = Debug|x64
+		{262D2228-9592-4158-8C37-EEB583ED0AA0}.Debug|x86.ActiveCfg = Debug|Win32
+		{262D2228-9592-4158-8C37-EEB583ED0AA0}.Debug|x86.Build.0 = Debug|Win32
+		{262D2228-9592-4158-8C37-EEB583ED0AA0}.Release|x64.ActiveCfg = Release|x64
+		{262D2228-9592-4158-8C37-EEB583ED0AA0}.Release|x64.Build.0 = Release|x64
+		{262D2228-9592-4158-8C37-EEB583ED0AA0}.Release|x86.ActiveCfg = Release|Win32
+		{262D2228-9592-4158-8C37-EEB583ED0AA0}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

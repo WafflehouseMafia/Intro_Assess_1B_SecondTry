@@ -6,10 +6,9 @@
 using namespace std;
 
 
-//I'm going to kermit sewerslide
-
-//This is important to learn, as two teachers have said, but oh my god is it hard to understand.
-
-//A very "I get it, but I don't **get** it" typa deal
-
-//Anyway, you wrote down stuff about Pointers on pages 36 - 42 in your notebook.
+void SwappingPointers(int* ValueOne, int* ValueTwo) //Making it a void, since the assessment says that it shouldn't return anything.
+{ //All of these are specifically *pointers, as to my knowledge we're less returning a spot in memory and more just, for lack of a better word, pointing at the value at that particular spot
+	int swapping = *ValueOne; //Gotta store one of the values before they swap. So far, so normal
+	*ValueOne = *ValueTwo;
+	*ValueTwo = swapping;
+}
