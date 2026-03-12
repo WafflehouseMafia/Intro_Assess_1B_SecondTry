@@ -86,7 +86,7 @@ int main()
 		valuePosition = BinarySearch(targetValue, array, arraySize);
 		if (valuePosition != -1)
 		{
-			cout << "\nYour value was found at position " << valuePosition << ".\n";
+			cout << "\nYour value was found at position " << valuePosition + 1 << ".\n"; //Just like in Linear Search, changing the position it tells you to +1 since people start counting at 1.
 			cout << "\n\nLet's see if you can get another one!\n\n";
 		}
 		else

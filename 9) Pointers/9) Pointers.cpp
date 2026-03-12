@@ -12,3 +12,15 @@ void SwappingPointers(int* ValueOne, int* ValueTwo) //Making it a void, since th
 	*ValueOne = *ValueTwo;
 	*ValueTwo = swapping;
 }
+
+int main()
+{
+	int ValueOne = 2;
+	int ValueTwo = 1;
+	
+	cout << "The values for our integers are currently all messed up! Value One comes back as " << ValueOne << ", and Value Two is " << ValueTwo << "!\n"
+		<< "\nBut with the power of pointers....\n";
+	SwappingPointers(&ValueOne, &ValueTwo); //And unlike in the function itself, here we're giving the values the actual point in history they're supposed to be pointing to.
+	assert(ValueOne == 1 && ValueTwo == 2);
+	cout << "\nNow the integer for Value One returns " << ValueOne << " and Value Two returns " << ValueTwo << "!\n";
+}
